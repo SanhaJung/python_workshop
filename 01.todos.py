@@ -23,7 +23,7 @@ while True:
         index += 1
         todos.append(todo)
         print()
-        print("'{0}'일정이 추가되었습니다.".format( todo["title"]))
+        print("'{0}'일정이 추가되었습니다.".format(todo["title"]))
         print()
     elif menu == "2":
         print()
@@ -47,7 +47,6 @@ while True:
                 print("{0}번 '{1}'일정이 삭제되었습니다.".format(todo["todoNum"], todo['title']))
                 print()
                 todos.remove(todo)
-
 
     elif menu == "4":
         print()

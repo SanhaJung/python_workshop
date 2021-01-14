@@ -110,7 +110,6 @@ while True:
         register(todoNum, title)
         message_display(f"'{todos[len(todos)-1]['title']}'일정이 추가되었습니다.")
 
-
     elif menu == "2":
         print()
         print("수정할 일정의 제목을 입력하세요.")
@@ -118,12 +117,10 @@ while True:
         new_title = input("수정할 제목: ")
         new_todo = update(title_change, new_title)
 
-
     elif menu == "3":
         message_display("삭제할 일정의 제목을 입력하세요.")
         delete = input("일정 제목: ")
         remove_todo(delete)
-
 
     elif menu == "4":
         message_display("<일정 목록>")
@@ -146,4 +143,3 @@ while True:
             message_display("처음으로 돌아갑니다.")
     else:
         message_display("메뉴를 다시 입력하세요.")
-
